@@ -1,0 +1,22 @@
+{
+  "name": "choti-ki-edu",
+  "version": "1.0.0",
+  "description": "Website desgined by Krish and AnkitAgarwal",
+  "main": "ui-bootstrap-tpls-2.0.1.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "krishdev"
+  },
+  "author": "Krishna",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-bootstrap-npm": "^0.14.3",
+    "angular-ui-router": "^0.3.1",
+    "gulp-install": "^0.6.0"
+  }
+}

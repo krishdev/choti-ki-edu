@@ -1,0 +1,7 @@
+<slick settings="slickConfig" ng-if="slickConfigLoaded">
+	<div ng-repeat="bi in carousel.imgUrl track by $index">
+		<img class="img-responsive" ng-src="{{bi}}">
+	</div>
+	<button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button">Previous</button>
+	<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button">Next</button>
+</slick>

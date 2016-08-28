@@ -1,6 +1,91 @@
-body { padding-top: 70px; }
-body { padding-bottom: 70px; }
+/*common*/
 
-.copyright-text-align{
-	text-align: center !important;
+body {
+	background-color: #ffdbdb;
 }
+.error..text-muted {
+	color: #e51b1b;
+}
+
+/*Slick Carousel Custom*/
+
+
+/*Krish*/
+
+.slick-slider {
+	margin: 20px 0;
+}
+.slick-arrow {
+	z-index: 1 !important;
+}
+.slick-prev {
+	left: 0 !important;
+}
+.slick-next {
+	right: 0 !important;
+}
+.slick-slider div img {
+	width: 570px !important;
+	height: 272px !important;
+}
+.slick-slider .slick-slide {
+	margin: 0 0.8px;
+}
+
+/*End Carousel*/
+
+
+/*Nav*/
+
+
+/*Krish*/
+
+nav {
+	background: rgba(5, 41, 77, 0.8) !important;
+	border: 0 !important;
+	border-bottom: 2px solid lightgray;
+	padding: 22px;
+	text-shadow: 0 0 0 transparent;
+}
+
+/*End Nav*/
+
+
+/*Member Register*/
+
+.panel-body .form-group.btn-group {
+	margin-left: 0px;
+	display: block !important;
+}
+.panel-body .form-group.btn-group .txtOthers input {
+	height: 20px;
+	color: #000;
+}
+.panel-body button {
+	padding: 10px;
+	width: 141px;
+	background: #3072ac;
+	color: #fff;
+	text-shadow: 0;
+}
+
+/*End Member Register*/
+
+
+/*sideContainer*/
+
+.sideContainer .panel-body {
+	overflow: hidden;
+}
+.sideContainer .panel-body .btn-group-lg>.btn,
+.btn-lg {
+	text-align: left;
+}
+.inlineIcon img {
+	width: 22px;
+}
+.inlineIcon {
+	margin-right: 8px;
+}
+
+/*End sideContainer*/

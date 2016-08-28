@@ -1,0 +1,71 @@
+<div class="slider">
+	<ng-include src="mCtrl.location.carouselLocation"></ng-include>
+</div>
+<div class="row">
+	<div class="col-md-8 panel panel-primary">
+		<div class="panel-heading">Member Registration Form</div>
+		<div class="panel-body">
+			<h4>{{mCtrl.messages.error}}{{mCtrl.messages.success}}</h4>
+			<form class="form-horizontal" name="regForm" novalidate ng-submit="mCtrl.submitForm(regForm.$valid)">
+				<div class="form-group">
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="fullName" name="name" ng-model="user.name" placeholder="Enter Full Name" required>
+						<small ng-show="regForm.name.$error.pattern" class="error  text-muted">Only Text</small>
+						<small class="form-text error text-muted" ng-messages="regForm.name.$error" ng-messages-include="messages.html"></small>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-8">
+						<input type="email" class="form-control" id="email" placeholder="Enter email" name="email" ng-model="user.email" required>
+
+						<small class="form-text error text-muted" ng-messages="regForm.email.$error" ng-messages-include="messages.html"></small>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-8">
+						<textarea type="text" class="form-control" id="address" name="address" ng-model="user.address" placeholder="Enter address" required></textarea>
+						<small class="form-text error text-muted" ng-messages="regForm.address.$error" ng-messages-include="messages.html"></small>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-8">
+						<input name="phone" type="number" ng-model="user.phone" required class="form-control" id="phone" placeholder="Enter phone number">
+						<small class="form-text error text-muted" ng-messages="regForm.phone.$error" ng-messages-include="messages.html"></small>
+					</div>
+				</div>
+				<div class="form-group btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input id="availDay01" type="checkbox" ng-click="mCtrl.addDays($event,'Sat')" name="availableDays" ng-model="ctrl.userReg.availableDays" value="Sat" autocomplete="off"> Sat
+					</label>
+					<label class="btn btn-primary">
+						<input id="availDay02" type="checkbox" ng-click="mCtrl.addDays($event,'Sun')" name="availableDays" ng-model="ctrl.userReg.availableDays" value="Sun" autocomplete="off"> Sun
+					</label>
+					<small class="form-text error text-muted" ng-messages="regForm.availableDays.$error" ng-messages-include="messages.html"></small>
+				</div>
+				<div class="form-group btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input id="lang01" type="checkbox" ng-click="mCtrl.addLang($event,'Tamil')" name="languages" ng-model="ctrl.userReg.languages" value="Tamil" autocomplete="off"> Tamil
+					</label>
+					<label class="btn btn-primary">
+						<input id="lang02" type="checkbox" ng-click="mCtrl.addLang($event,'Hindi')" name="languages" ng-model="ctrl.userReg.languages" value="Hindi" autocomplete="off"> Hindi
+					</label>
+					<label class="btn btn-primary">
+						<input id="lang03" type="checkbox" ng-click="mCtrl.addLang($event,'Telugu')" name="languages" ng-model="ctrl.userReg.languages" value="Telugu" autocomplete="off"> Telugu
+					</label>
+					<label class="btn btn-primary txtOthers">
+						<input type="text" name="otherLanguage" ng-model="ctrl.userReg.otherLan">
+					</label>
+					<small class="form-text error text-muted" ng-messages="regForm.languages.$error" ng-messages-include="messages.html"></small>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-10">
+						<button type="submit" class="btn btn-default">Register</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<ng-include src="mCtrl.location.sideContLocation"></ng-include>
+	</div>
+</div>
